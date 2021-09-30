@@ -1,0 +1,194 @@
+// Offr Contact Form styling by Deirdre Nic Filip
+// version 1.1
+
+$primaryBtn: #594d7a;
+$primaryBtnHov: #42395b;
+$headerText: #19003a;
+$paraText: #343a40;
+$onHoverText: #e239bf;
+$background: #f5f5fa;
+
+// Offr AkivGrotesk font extracted
+@fontface {
+	font-family: "aktivgrotesk-regular";
+	src: url(fonts/AktivGrotesk-Regular.woff), url(fonts/AktivGrotesk-Regular.ttf);
+	font-weight: 300;
+
+	font-family: "aktivgrotesk-medium";
+	src: url(fonts/AktivGrotesk-Medium.woff), url(fonts/AktivGrotesk-Medium.ttf);
+	font-weight: 500;
+
+	font-family: "aktivgrotesk-bold";
+	src: url(fonts/AktivGrotesk-Bold.woff), url(fonts/AktivGrotesk-Bold.ttf);
+	font-weight: 800;
+}
+
+body {
+	font-family: "AktivGrotesk-Regular";
+	color: $paraText;
+	padding-top: 4em;
+	margin: 0 auto;
+}
+
+a {
+	color: $paraText;
+	&:hover {
+		color: $onHoverText;
+		text-decoration: none;
+	}
+	&:active {
+		color: $headerText;
+	}
+}
+
+h3 {
+	font-family: "aktivgrotesk-bold";
+	color: $headerText;
+	font-weight: 800;
+	font-size: 40px;
+}
+
+h4 {
+	font-family: "aktivgrotesk-bold";
+	color: $headerText;
+	font-weight: 800;
+	font-size: 22px;
+}
+
+// Formatting issues resolved
+.align-items-center {
+	align-items: normal !important;
+}
+
+.bg-primary {
+	background-color: $background !important;
+}
+
+.col-md-6,
+.col-md-12 {
+	padding-right: 0px;
+}
+
+.p-md-5 {
+	padding: 2rem !important;
+}
+
+// Icons & Images
+.fal {
+	color: $headerText;
+}
+
+.ireland,
+.britain {
+	width: 32px;
+	height: 18px;
+	margin: 3px 0px 0px -10px;
+}
+
+.brit-margin {
+	margin-top: 20px;
+}
+
+// Form field styling
+label {
+	color: $headerText;
+}
+
+.form-control {
+	background-color: $background;
+	border: 1px solid #ebe4fe;
+		&:focus {
+			background-color: $background;
+			border-color: rgba(89,77,122,.5);;
+			box-shadow: none;
+		}
+}
+
+.send-btn {
+	padding-top: 10px;
+}
+
+.fine-print {
+	font-size: 12px;
+	padding: 0px 40px 0px 10px;
+	color: $paraText;
+	a {
+		color: $onHoverText;
+		&:hover {
+			color: $primaryBtn;
+			text-decoration: none;
+		}
+	}
+}
+
+.btn-primary {
+	margin-top: 20px;
+	background-color: $primaryBtn;
+	border-color: $primaryBtn;
+	border-radius: 0.25rem;
+	&:hover {
+		background: $primaryBtnHov;
+		border-color: $primaryBtnHov;
+	}
+}
+
+/* 
+  Device = Tablets, Ipads (portrait)
+  Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+	.mobile-adj {
+		padding: 0px !important;
+	}
+
+	.p-md-5 {
+		padding: 1rem !important;
+	}
+
+	.no-gutters > .col,
+	.no-gutters > [class*="col-"] {
+		padding-right: 15px;
+	}
+
+	.fine-print {
+		font-size: 12px;
+		padding: 0px 0px 0px 10px;
+	}
+}
+
+/* 
+  Device = Most of the Smartphones Mobiles (Portrait)
+  Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 767px) {
+	.mobile-adj {
+		padding: 0px !important;
+	}
+
+	.shift {
+		padding-left: 10px;
+	}
+
+	.col-md-6,
+	.col-md-12 {
+		padding-right: 15px;
+	}
+
+	.p-md-5 {
+		padding: 2rem !important;
+	}
+
+	h3 {
+		padding: 2rem 0rem 0rem 0rem;
+		font-size: 40px;
+	}
+
+	.fine-print {
+		font-size: 12px;
+		padding: 0px 0px 0px 10px;
+	}
+
+	.btn-primary {
+		width: 100%;
+	}
+}

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap-Font Awesome and D.Nic Styles CSS -->
+      <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="dist/style.css">
+   </head>
+   <body>
+      <div class="container">
+      <div class="row justify-content-center">
+         <div class="col-md-12 mobile-adj">
+            <div class="wrapper">
+               <div class="row no-gutters">
+                  <!-- BEGINNING of Left Column -->
+                  <div class="col-lg-4 col-md-5 d-flex align-items-stretch">
+                     <div id="left-card" class="info-wrap bg-primary w-100 p-md-5">
+                        <h3>Contact Offr</h3>
+                        <p class="mb-5">Have any questions?<br> We’d love to hear from you.</p>
+                        <div class="shift">
+                           <div class="dbox w-100 d-flex align-items-start">
+                              <div class="icon d-flex align-items-center justify-content-center">
+                                 <image class="ireland" src="img/Tricolour_Ireland1.svg"></image>
+                              </div>
+                              <div class="text pl-3">
+                                 <h4>Ireland</h4>
+                              </div>
+                           </div>
+                           <div class="dbox w-100 d-flex align-items-start">
+                              <div class="icon d-flex align-items-center justify-content-center">
+                                 <span class="fal fa-map-marker-alt mr-2"></span>
+                              </div>
+                              <div class="text pl-3">
+                                 <p>Unit 6E, Nutgrove Office Park<br>Rathfarnham, Dublin<br>
+                                    Ireland,  D14 A0X2
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="dbox w-100 d-flex align-items-center">
+                              <div class="icon d-flex align-items-center justify-content-center">
+                                 <span class="fal fa-phone-rotary mr-1"></span>
+                              </div>
+                              <div class="text pl-3">
+                                 <p><a href="tel://+35312238727">+353 1 223 8727</a></p>
+                              </div>
+                           </div>
+                           <div class="dbox w-100 d-flex align-items-start brit-margin">
+                              <div class="icon d-flex align-items-center justify-content-center">
+                                 <image class="britain" src="img/United_Kingdom1.svg"></image>
+                              </div>
+                              <div class="text pl-3">
+                                 <h4>United Kingdom</h4>
+                              </div>
+                           </div>
+                           <div class="dbox w-100 d-flex align-items-start">
+                              <div class="icon d-flex align-items-center justify-content-center">
+                                 <span class="fal fa-map-marker-alt mr-2"></span>
+                              </div>
+                              <div class="text pl-3">
+                                 <p>Floor 28, The Shard<br>
+                                    32 London Bridge St<br>
+                                    London, United Kingdom<br>
+                                    SE1 9SG
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="dbox w-100 d-flex align-items-center">
+                              <div class="icon d-flex align-items-center justify-content-center">
+                                 <span class="fal fa-phone-rotary mr-1"></span>
+                              </div>
+                              <div class="text pl-3">
+                                 <p><a href="tel://+442038704553">+44 20 3870 4553</a></p>
+                              </div>
+                           </div>
+                           <div class="dbox w-100 d-flex align-items-center">
+                              <div class="icon d-flex align-items-center justify-content-center">
+                                 <span class="fal fa-phone-plus mr-1"></span>
+                              </div>
+                              <div class="text pl-3">
+                                 <p><a href="tel://+448081964553">+44 808 196 4553 Toll Free</a></p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- BEGINNING of Nested Right Column -->
+                  <div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
+                     <div class="contact-wrap w-100 p-md-5 p-4">
+                        <h3 class="mb-4">Send a Message</h3>
+                        <div id="form-message-warning" class="mb-4"></div>
+                        <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label class="label" for="name">First Name</label>
+                                    <input type="text" class="form-control" name="name" id="name">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label class="label" for="name">Surname</label>
+                                    <input type="text" class="form-control" name="name" id="name">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label class="email" for="email">Email</label>
+                                    <input type="email" class="form-control" name="email" id="email">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label class="phone" for="phone">Phone</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone">
+                                 </div>
+                              </div>
+                              <div class="col-md-12">
+                                 <div class="form-group">
+                                    <label class="label" for="#">Message</label>
+                                    <textarea name="message" class="form-control" id="message" cols="30" rows="4"></textarea>
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <div class="form-group">
+                                    <label for="exampleFormControlSelect1">You are a:</label>
+                                    <select class="form-control" id="option-select">
+                                       <option selected="true" disabled="disabled">Please Select</option>
+                                       <option>Buyer/Seller</option>
+                                       <option>Agent</option>
+                                       <option>Solicitor</option>
+                                       <option>Other</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-md-12 send-btn">
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                       <p class="fine-print">Offr is committed to your privacy. By ticking this box you confirm that you agree to Offr using the information you provide us to contact you with relevant content and services and you agree to our website <a class="clr-swap" href url="#">terms and conditions</a>,<a class="clr-swap" href url="#"> privacy policy</a> and consent to cookies on your device.</p>
+                                    </label>
+                                 </div>
+                              </div>
+                              <div class="col-md-12 send-btn">
+                                 <div class="form-group">
+                                    <input type="submit" value="Send Message" class="btn btn-primary btn-lg">
+                                    <div class="submitting"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <!-- END of Nested Right Column -->
+                  <!-- </div> -->
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
